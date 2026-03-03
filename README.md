@@ -68,6 +68,6 @@ topicos-deteccion-diabetes/
 👨‍💻 CoAutor: 
 - [Jaime Llanos](https://github.com/jllanosb)
 
-📅 Última actualización: Marzo 2026
+📅 Última actualización: Marzo 2026.
 
 ## ✨ "La calidad de los datos no es un paso, es un viaje a través de capas de refinamiento" ✨
