@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "Housing",
+  "namespace": "dataset.housing",
+  "fields": [
+    { "name": "crim",    "type": "double" },
+    { "name": "zn",      "type": "double" },
+    { "name": "indus",   "type": "double" },
+    { "name": "chas",    "type": "double" },
+    { "name": "nox",     "type": "double" },
+    { "name": "rm",      "type": "double" },
+    { "name": "age",     "type": "double" },
+    { "name": "dis",     "type": "double" },
+    { "name": "rad",     "type": "double" },
+    { "name": "tax",     "type": "double" },
+    { "name": "ptratio", "type": "double" },
+    { "name": "b",       "type": "double" },
+    { "name": "lstat",   "type": "double" },
+    { "name": "medv",    "type": "double" }
+  ]
+}
