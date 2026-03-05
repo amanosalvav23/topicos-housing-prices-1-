@@ -96,7 +96,7 @@ def insertar_datos_avro(spark, db_name, table_name, df_source, partition_col=Non
 TABLAS_CONFIG = [
     {
         "nombre": "HOUSING",
-        "archivo_avsc": "housing.avsc",
+        "archivo_avsc": "housing_landing.avsc",
         "partitioned_by": ["ocean_proximity"], # Particionamos por ubicación
         "dynamic_partition": True
     }
