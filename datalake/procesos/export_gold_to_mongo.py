@@ -16,7 +16,9 @@ spark = SparkSession.builder \
 
 # 2. Ruta del CSV generado en el paso anterior (Capa Functional)
 # Adaptado a tu repositorio actual
-csv_path = "file:/home/hadoop/topicos-housing-prices-1-/datalake/temp/part-*.csv"
+#csv_path = "file:/home/hadoop/topicos-housing-prices-1-/datalake/temp/part-*.csv"
+# Ruta para Mac
+csv_path = "file:///Users/aldairmanosalva/topicos-housing-prices-1-/datalake/temp/part-*.csv"
 
 print(f"📥 Cargando datos desde: {csv_path}")
 
@@ -38,16 +40,13 @@ print("===========================================")
 try:
     print("📤 Iniciando persistencia en MongoDB...")
     df.write \
-      .format("mongodb") \
-      .mode("overwrite") \
-      .option("database", "topicos_housing") \
-      .option("collection", "housing_gold") \
-      .save()
-    
+        .format("mongodb") \
+        .mode("overwrite") \
+        .option("database", "topicos_housing") \
+        .option("collection", "housing_gold") \
+        .save()
     print("✅ ¡Migración a MongoDB completada exitosamente!")
-
 except Exception as e:
     print(f"❌ Error durante la migración: {str(e)}")
-
 finally:
     spark.stop()
